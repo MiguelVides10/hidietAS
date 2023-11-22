@@ -103,48 +103,51 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void CrearCuenta(View view) {
-        String url = "http://18.222.197.239:8000/api/usuariopost/";
-        JSONObject data = new JSONObject();
-        String correo = tiUser.getText().toString();
-        String contra = tiPass.getText().toString();
 
-        if(!correo.isEmpty() && !contra.isEmpty()){
-            try {
-                data.put("correo", tiUser);
-                data.put("contrasenia", tiPass);
-                // Agrega más claves y valores según sea necesario
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            // Crear un objeto RequestParams y agregar el JSON como parámetro
-            RequestParams params = new RequestParams();
-            params.put("data", data);
-            AsyncHttpClient client = new AsyncHttpClient();
-
-            String json = data.toString();
-            client.post( url, params, new JsonHttpResponseHandler() {
-                @Override
-                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                    try {
-                            if(response.getString("message").equals("usuario creado")){
-                                Toast.makeText(MainActivity.this, "Usuario creado con éxito",Toast.LENGTH_SHORT).show();
-                            } else {
-                                Toast.makeText(MainActivity.this, "El usuario no se pudo crear",Toast.LENGTH_SHORT).show();
-                            }
-                    } catch (JSONException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-
-                @Override
-                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                    // Manejar la respuesta fallida aquí
-                    Toast.makeText(MainActivity.this, "Error al conectar con el server",Toast.LENGTH_SHORT).show();
-                }
-            });
+        startActivity(new Intent(getApplicationContext(),Perfil.class));
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        finish();
+//        String url = "http://18.222.197.239:8000/api/usuariopost/";
+//        JSONObject data = new JSONObject();
+//        String correo = tiUser.getText().toString();
+//        String contra = tiPass.getText().toString();
+//
+//        if(!correo.isEmpty() && !contra.isEmpty()){
+//            try {
+//                data.put("correo", tiUser);
+//                data.put("contrasenia", tiPass);
+//                // Agrega más claves y valores según sea necesario
+//
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//
+//            // Crear un objeto RequestParams y agregar el JSON como parámetro
+//            RequestParams params = new RequestParams();
+//            params.put("data", data);
+//            AsyncHttpClient client = new AsyncHttpClient();
+//
+//            String json = data.toString();
+//            client.post( url, params, new JsonHttpResponseHandler() {
+//                @Override
+//                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+//                    try {
+//                            if(response.getString("message").equals("usuario creado")){
+//                                Toast.makeText(MainActivity.this, "Usuario creado con éxito",Toast.LENGTH_SHORT).show();
+//                            } else {
+//                                Toast.makeText(MainActivity.this, "El usuario no se pudo crear",Toast.LENGTH_SHORT).show();
+//                            }
+//                    } catch (JSONException e) {
+//                        throw new RuntimeException(e);
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+//                    // Manejar la respuesta fallida aquí
+//                    Toast.makeText(MainActivity.this, "Error al conectar con el server",Toast.LENGTH_SHORT).show();
+//                }
+//            });
         }
 
     }
-}

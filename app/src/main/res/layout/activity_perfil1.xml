@@ -2,22 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#94DE3C"
     android:orientation="vertical"
-    android:paddingLeft="15dp"
-    android:paddingTop="15dp"
-    android:paddingEnd="15dp"
-    android:paddingRight="15dp">
+    tools:context=".Perfil1">
 
     <TextView
-        android:id="@+id/tvInform"
+        android:id="@+id/tvInfo1"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
         android:text="@string/Informacion"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:padding="10dp"/>
 
     <View
         android:id="@+id/divider5"
@@ -30,10 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="@string/Nombre"
         android:inputType="text"
+        android:hint="@string/Nombre"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" />
+        android:paddingRight="20dp"/>
 
     <View
         android:id="@+id/divider"
@@ -46,10 +43,10 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="@string/Peso"
         android:inputType="text"
+        android:hint="@string/Peso"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" />
+        android:paddingRight="20dp"/>
 
     <View
         android:id="@+id/divider2"
@@ -62,10 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="@string/Estatura"
         android:inputType="text"
+        android:hint="@string/Estatura"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" />
+        android:paddingRight="20dp"/>
 
     <View
         android:id="@+id/divider3"
@@ -85,8 +82,8 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:gravity="center_vertical"
-            android:text="@string/Sexo"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:text="@string/Sexo" />
 
         <RadioButton
             android:id="@+id/rbMasculino"
@@ -115,10 +112,10 @@
         android:id="@+id/tvObjetivos"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
         android:text="@string/Objetivos"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:padding="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -128,14 +125,14 @@
         android:paddingRight="20dp">
 
         <RadioButton
-            android:id="@+id/rdbtnPeso"
+            android:id="@+id/radioButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/rbBajarPeso" />
 
         <RadioButton
-            android:id="@+id/rdbtnDieta"
+            android:id="@+id/radioButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -151,19 +148,29 @@
         android:paddingRight="20dp">
 
         <RadioButton
-            android:id="@+id/rdbtnIdeal"
+            android:id="@+id/radioButton7"
             android:layout_width="37dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/rbAlcanzarPeso" />
 
         <RadioButton
-            android:id="@+id/rdbtnOtro"
+            android:id="@+id/radioButton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/rbOtro" />
     </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/etOtroObjetivo"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
 
     <View
         android:id="@+id/divider4"
@@ -177,8 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginEnd="20dp"
-        android:text="@string/btnContinuar"
-        android:onClick="Continuar"
-        />
+        android:onClick="Finalizar"
+        android:text="@string/btnContinuar" />
 
 </LinearLayout>
