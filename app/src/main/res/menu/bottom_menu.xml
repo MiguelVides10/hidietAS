@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_progreso"
+        android:icon="@drawable/baseline_emoji_events"
+        android:title="Progreso" />
+    <item
+        android:id="@+id/bottom_dieta"
+        android:icon="@drawable/baseline_food_bank_24"
+        android:title="Dieta" />
+    <item
+        android:id="@+id/bottom_perfil"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+    <item
+        android:id="@+id/bottom_acerca"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Acerca de" />
+</menu>
