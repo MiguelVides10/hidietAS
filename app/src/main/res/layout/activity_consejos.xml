@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FE93C"
+    tools:context=".Consejos">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvConsejos"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Consejos"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgConsejos"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/consejos" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvConsejo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Variedad de alimentos: Consume una variedad de alimentos para asegurarte de obtener todos los nutrientes esenciales."
+            android:textSize="12sp"
+            />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvConsejo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Controla las porciones: No solo importa lo que comes, sino también cuánto comes. Controlar las porciones puede ayudar a mantener un equilibrio calórico adecuado."
+            android:textSize="12sp"
+            />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvConsejo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Hidratación: Bebe suficiente agua a lo largo del día. A veces, la sed se confunde con el hambre."
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

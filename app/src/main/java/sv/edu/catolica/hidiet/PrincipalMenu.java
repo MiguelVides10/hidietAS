@@ -2,20 +2,18 @@ package sv.edu.catolica.hidiet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class AcercaMenu extends AppCompatActivity {
+public class PrincipalMenu extends AppCompatActivity {
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_acerca_menu);
-
+        setContentView(R.layout.activity_principal_menu);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
@@ -53,5 +51,15 @@ public class AcercaMenu extends AppCompatActivity {
 
             return false;
         });
+    }
+
+    public void MostrarConsejos(View view) {
+        startActivity(new Intent(getApplicationContext(), Consejos.class));
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
+    public void MostrarCitas(View view) {
+        startActivity(new Intent(getApplicationContext(), CitasMotivadoras.class));
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 }

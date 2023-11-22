@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void VerificarDatos(View view) {
-        Intent intent = new Intent(getApplicationContext(), AcercaMenu.class);
+        Intent intent = new Intent(getApplicationContext(), PrincipalMenu.class);
         startActivity(intent);
 
         // Opcional: Puedes agregar transiciones de animación entre Activities

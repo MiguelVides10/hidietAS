@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FE93C"
+    tools:context=".PrincipalMenu">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="HiDiet es como un refugio virtual de inspiración y empoderamiento, uniendo consejos, citas motivadoras y estadísticas fundamentales para guiar a los usuarios hacia un estilo de vida saludable a través de una dieta equilibrada. "
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvConsejos"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Consejos"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgConsejos"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:src="@drawable/consejos" />
+
+            <TextView
+                android:id="@+id/tvConsejosInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="En nuestra sección de consejos de dieta, te invitamos a descubrir el poder de tomar decisiones alimenticias conscientes."
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConsejos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver más"
+            android:onClick="MostrarConsejos"/>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvCitasMotivadoras"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Citas Motivadoras"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgCitas"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:src="@drawable/citas" />
+
+            <TextView
+                android:id="@+id/tvInfoCitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar. "
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver más"
+            android:onClick="MostrarCitas"/>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvEstadisticas"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Estadistícas"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgEstadisticas"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:src="@drawable/estadisticas" />
+
+            <TextView
+                android:id="@+id/tvInfoEstadisticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar. "
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>
