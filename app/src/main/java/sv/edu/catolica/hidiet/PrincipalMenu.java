@@ -40,6 +40,7 @@ public class PrincipalMenu extends AppCompatActivity {
             } else if (itemId == R.id.bottom_dieta) {
                 Intent intent1 = new Intent(PrincipalMenu.this, DietaMenu.class);
                 intent1.putExtra("ID",this.id);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 startActivity(intent1);
                 finish();
                 return true;

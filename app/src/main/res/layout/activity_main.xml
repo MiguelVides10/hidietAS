@@ -24,8 +24,7 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logohidiet" />
+        app:srcCompat="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -58,7 +57,7 @@
             android:id="@+id/tiPasw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/contrasena"
+            android:hint="@string/password"
             android:inputType="textPassword"
             tools:ignore="TextContrastCheck" />
 
@@ -67,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/man_ses" />
+            android:text="@string/mantener_sesi_n" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

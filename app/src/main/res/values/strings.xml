@@ -73,4 +73,6 @@
     <string name="btn_ver_mas_citas">Ver más</string>
     <string name="estadisticas_act">Estadistícas</string>
     <string name="info_estadisticas_act">Tu dedicación está dando frutos en Hidiet. Aquí tienes un vistazo rápido a tu progreso.</string>
+    <string name="mantener_sesi_n">Mantener sesión</string>
+    <string name="registrarme">Registrarme</string>
 </resources>

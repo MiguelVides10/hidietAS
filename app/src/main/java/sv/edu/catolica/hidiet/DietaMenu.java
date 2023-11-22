@@ -52,13 +52,16 @@ public class DietaMenu extends AppCompatActivity {
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_dieta) {
-                // Lógica para el elemento "bottom_progreso"
-                startActivity(new Intent(getApplicationContext(), DietaMenu.class));
+                Intent intent = new Intent(DietaMenu.this, DietaMenu.class);
+                intent.putExtra("ID",this.id);
+                startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_perfil) {
-                startActivity(new Intent(getApplicationContext(), PerfilMenu.class));
+                Intent intent = new Intent(DietaMenu.this, PerfilMenu.class);
+                intent.putExtra("ID",this.id);
+                startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;

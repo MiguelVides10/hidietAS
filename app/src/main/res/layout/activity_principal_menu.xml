@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="@string/cabecera_cons"
+            android:text="@string/consejos_info"
             android:textColor="#000000"
             android:textSize="15sp"
             tools:ignore="VisualLintLongText" />
@@ -48,7 +48,6 @@
                 android:id="@+id/imgConsejos"
                 android:layout_width="220dp"
                 android:layout_height="100dp"
-                android:contentDescription="@string/consejoimage0"
                 android:src="@drawable/consejos"
                 tools:ignore="ImageContrastCheck" />
 
@@ -57,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/consejos_sec"
+                android:text="@string/consejos_info"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:ignore="VisualLintLongText" />
@@ -69,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="MostrarConsejos"
-            android:text="@string/ver_m_s"
+            android:text="@string/btn_ver_mas"
             android:textColor="#000000"
             tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
@@ -100,14 +99,14 @@
                 android:layout_width="220dp"
                 android:layout_height="100dp"
                 android:src="@drawable/citas"
-                android:contentDescription="@string/imgcitas" />
+               />
 
             <TextView
                 android:id="@+id/tvInfoCitas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/citas_moti"
+                android:text="@string/info_citas"
                 android:textColor="#090909"
                 android:textSize="12sp"
                 tools:ignore="VisualLintLongText" />
@@ -120,9 +119,8 @@
             android:layout_height="wrap_content"
             android:onClick="MostrarCitas"
 
-            android:text="@string/ver_m_s"
-            android:textColor="#000000"
-            tools:ignore="VisualLintButtonSize" />
+            android:text="@string/btn_ver_mas"
+            android:textColor="#000000" />
 
         <View
             android:id="@+id/divider5"
@@ -136,7 +134,7 @@
             android:layout_height="40dp"
             android:gravity="center_horizontal"
             android:padding="10dp"
-            android:text="@string/estadist_cas"
+            android:text="@string/estadisticas_act"
             android:textColor="#000000"
             android:textStyle="bold" />
 
@@ -159,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/info_esta"
+                android:text="@string/info_estadisticas_act"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 tools:ignore="VisualLintLongText" />
