@@ -17,8 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="HiDiet es como un refugio virtual de inspiración y empoderamiento, uniendo consejos, citas motivadoras y estadísticas fundamentales para guiar a los usuarios hacia un estilo de vida saludable a través de una dieta equilibrada. "
-            android:textSize="15sp" />
+            android:text="@string/cabecera_cons"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:ignore="VisualLintLongText" />
 
         <View
             android:id="@+id/divider3"
@@ -28,41 +30,48 @@
 
         <TextView
             android:id="@+id/tvConsejos"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Consejos"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="@string/consejos"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
-        <ImageView
-            android:id="@+id/imgConsejos"
-            android:layout_width="220dp"
-            android:layout_height="100dp"
-            android:src="@drawable/consejos" />
+            <ImageView
+                android:id="@+id/imgConsejos"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/consejoimage0"
+                android:src="@drawable/consejos"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/tvConsejosInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="En nuestra sección de consejos de dieta, te invitamos a descubrir el poder de tomar decisiones alimenticias conscientes."
+                android:text="@string/consejos_sec"
+                android:textColor="#000000"
                 android:textSize="12sp"
-                />
+                tools:ignore="VisualLintLongText" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnConsejos"
+            style="@style/TextAppearance.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ver más"
-            android:onClick="MostrarConsejos"/>
+            android:onClick="MostrarConsejos"
+            android:text="@string/ver_m_s"
+            android:textColor="#000000"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         <View
             android:id="@+id/divider4"
@@ -72,41 +81,48 @@
 
         <TextView
             android:id="@+id/tvCitasMotivadoras"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Citas Motivadoras"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="@string/citas_motivadoras"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imgCitas"
                 android:layout_width="220dp"
                 android:layout_height="100dp"
-                android:src="@drawable/citas" />
+                android:src="@drawable/citas"
+                android:contentDescription="@string/imgcitas" />
 
             <TextView
                 android:id="@+id/tvInfoCitas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar. "
+                android:text="@string/citas_moti"
+                android:textColor="#090909"
                 android:textSize="12sp"
-                />
+                tools:ignore="VisualLintLongText" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnCitas"
+            style="@style/TextAppearance.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ver más"
-            android:onClick="MostrarCitas"/>
+            android:onClick="MostrarCitas"
+
+            android:text="@string/ver_m_s"
+            android:textColor="#000000"
+            tools:ignore="VisualLintButtonSize" />
 
         <View
             android:id="@+id/divider5"
@@ -116,33 +132,37 @@
 
         <TextView
             android:id="@+id/tvEstadisticas"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Estadistícas"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="@string/estadist_cas"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imgEstadisticas"
                 android:layout_width="220dp"
                 android:layout_height="100dp"
-                android:src="@drawable/estadisticas" />
+                android:contentDescription="@string/estad_sticas"
+                android:src="@drawable/estadisticas"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/tvInfoEstadisticas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar. "
+                android:text="@string/info_esta"
+                android:textColor="#000000"
                 android:textSize="12sp"
-                />
+                tools:ignore="VisualLintLongText" />
         </LinearLayout>
 
     </LinearLayout>
@@ -164,6 +184,7 @@
         app:itemIconTint="@drawable/item_selector"
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_menu" />
+        app:menu="@menu/bottom_menu"
+        tools:ignore="VisualLintBottomNav" />
 
 </RelativeLayout>

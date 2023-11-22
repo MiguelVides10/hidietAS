@@ -8,11 +8,15 @@ import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProgresoMenu extends AppCompatActivity {
-
+    private int id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progreso_menu);
+        Intent intent = getIntent();
+        if (intent.hasExtra("ID")){
+            this.id = intent.getIntExtra("ID",0);
+        }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
@@ -37,8 +41,9 @@ public class ProgresoMenu extends AppCompatActivity {
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_perfil) {
-                startActivity(new Intent(getApplicationContext(), PerfilMenu.class));
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                Intent intent1 = new Intent(ProgresoMenu.this, PerfilMenu.class);
+                intent1.putExtra("ID",this.id);
+                startActivity(intent1);
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_acerca) {

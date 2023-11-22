@@ -14,13 +14,21 @@
 
         <TextView
             android:id="@+id/tvDesayuno"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Desayuno"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="Desayuno"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvdesayuno1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="desayuno"
+            android:textColor="#000000" />
 
         <ImageView
             android:id="@+id/imgDesayuno"
@@ -36,13 +44,21 @@
 
         <TextView
             android:id="@+id/tvAlmuerzo"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Almuerzo"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="Almuerzo"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAlmue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000" />
 
         <ImageView
             android:id="@+id/imgAlmuerzo"
@@ -58,13 +74,20 @@
 
         <TextView
             android:id="@+id/tvCena"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Cena"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            />
+            android:padding="10dp"
+            android:text="Cena"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvCena1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000" />
 
         <ImageView
             android:id="@+id/imgCena"

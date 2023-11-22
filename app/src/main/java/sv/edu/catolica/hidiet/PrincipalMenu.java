@@ -5,15 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class PrincipalMenu extends AppCompatActivity {
-
+    public int id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_menu);
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("ID")){
+            this.id = intent.getIntExtra("ID",0);
+        }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
@@ -32,13 +38,15 @@ public class PrincipalMenu extends AppCompatActivity {
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_dieta) {
-                // Lógica para el elemento "bottom_progreso"
-                startActivity(new Intent(getApplicationContext(), DietaMenu.class));
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                Intent intent1 = new Intent(PrincipalMenu.this, DietaMenu.class);
+                intent1.putExtra("ID",this.id);
+                startActivity(intent1);
                 finish();
                 return true;
             } else if (itemId == R.id.bottom_perfil) {
-                startActivity(new Intent(getApplicationContext(), PerfilMenu.class));
+                Intent intent1 = new Intent(PrincipalMenu.this, PerfilMenu.class);
+                intent1.putExtra("ID",this.id);
+                startActivity(intent1);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;

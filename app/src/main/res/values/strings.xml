@@ -41,4 +41,19 @@
     <string name="registrarse">Registrarse</string>
     <string name="correo_electr_nico">Correo electrónico:</string>
     <string name="ingrese_una_contrase_a">Ingrese una contraseña:</string>
+    <string name="logohidiet">logoHidiet</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="man_ses">Mantener sesión iniciada</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="cabecera_cons">HiDiet es como un refugio virtual de inspiración y empoderamiento, uniendo consejos, citas motivadoras y estadísticas fundamentales para guiar a los usuarios hacia un estilo de vida saludable a través de una dieta equilibrada.</string>
+    <string name="consejos">Consejos</string>
+    <string name="consejoimage0">consejoimage0</string>
+    <string name="consejos_sec">En nuestra sección de consejos de dieta, te invitamos a descubrir el poder de tomar decisiones alimenticias conscientes.</string>
+    <string name="ver_m_s">Ver más</string>
+    <string name="citas_motivadoras">Citas Motivadoras</string>
+    <string name="imgcitas">imgCitas</string>
+    <string name="citas_moti">Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar.</string>
+    <string name="estadist_cas">Estadistícas</string>
+    <string name="info_esta">Aquí, encontrarás palabras que alimentan tanto el alma como el cuerpo, recordándote que cada elección alimentaria es un paso hacia tu bienestar.</string>
 </resources>

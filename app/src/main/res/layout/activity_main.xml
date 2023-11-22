@@ -13,17 +13,19 @@
         android:id="@+id/tvBienvenido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bienvenido"
         android:gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:text="@string/bienvenido"
+        android:textColor="#000000"
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="212dp"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/logohidiet" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -37,7 +39,8 @@
             android:id="@+id/tiUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username" />
+            android:hint="@string/usuario"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -50,12 +53,21 @@
         app:counterEnabled="true"
         app:counterMaxLength="8"
         >
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiPasw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textPassword"/>
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/chkSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/man_ses" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -63,5 +75,15 @@
         android:layout_height="wrap_content"
         app:backgroundTint="@null"
         android:onClick="VerificarDatos"
-        android:text="@string/ingresar"/>
+        android:text="@string/ingresar"
+        tools:ignore="VisualLintButtonSize" />
+    <Button
+        android:id="@+id/RegistBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:onClick="CrearCuenta"
+        android:text="@string/registrarme"
+        tools:ignore="VisualLintButtonSize" />
+
 </LinearLayout>
